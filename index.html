@@ -1,67 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function showAlert() {
+        alert("button pressed");
+      }
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Open Sans";
+      }
+      header {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 15px 0 15px;
+        height: 80px;
+      }
+      .msg-img {
+        height: 15px;
+        width: 15px;
+        margin-top: 1px;
+      }
+      .title-header {
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-left: 5px;
+      }
+      .header-article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .try-me {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid hsl(321, 100%, 78%);
+        color: hsl(321, 100%, 78%);
+        background-color: white;
+        height: 24px;
+        width: 80px;
+        border-radius: 10px;
+      }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Try it free
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
-  1.4k+
-  Communities Formed
-
-  2.7m+
-  Messages Sent
-
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      .community {
+        display: flex;
+        flex: 1;
+        margin: 10px 30px 10px 30px;
+        flex-direction: column;
+      }
+      .community-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        font-family: "Poppins";
+      }
+      .community-p {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 20px;
+        line-height: 24px;
+      }
+      .community-button {
+        box-shadow: 0px 3px rgba(0, 37, 46, 0.2231);
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        font-size: 12px;
+        font-family: "Poppins";
+        align-self: center;
+        border-width: 0;
+        margin-bottom: 20px;
+      }
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+        border: 1px solid red;
+      }
+      .info-section {
+        margin: 30px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <article class="header-article">
+        <img
+          class="msg-img"
+          src="./images/icon-messages.svg"
+          alt="message image"
+        />
+        <span class="title-header">Huddle</span>
+      </article>
+      <article>
+        <button onclick="showAlert()" class="try-me">try it Free</button>
+      </article>
+    </header>
+    <section class="community">
+      <h1 class="community-title">Build The Community Your Fans Will Love</h1>
+      <p class="community-p">
+        Huddle re-imagines the way we build communities. You have a voice, but
+        so does your audience. Create connections with your users as you engage
+        in genuine discussion.
+      </p>
+      <button onclick="showAlert()" class="community-button">
+        Get Started For Free
+      </button>
+      <img src="./images/screen-mockups.svg" alt="screen mockups image" />
+    </section>
+    <section class="info-section">
+      <article class="info">
+        <img src="./images/icon-communities.svg" alt="communities image" />
+        <span>1.4k+</span>
+        <span> Communities Formed</span>
+      </article>
+      <article class="info">
+        <img src="./images/icon-messages.svg" alt="message image" />
+        <span>2.7m+</span>
+        <span> Messages Sent</span>
+      </article>
+    </section>
+  </body>
 </html>
