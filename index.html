@@ -91,13 +91,28 @@
         margin-bottom: 20px;
       }
       .info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "img header header"
+          "content content content"
+          "footer footer footer";
         border: 1px solid red;
       }
+
+      .info-title {
+        grid-area: content;
+      }
+
+      .info-subtitle {
+        grid-area: footer;
+      }
+
+      .info-img {
+        grid-area: img;
+      }
+
       .info-section {
         margin: 30px;
         padding: 20px;
@@ -118,29 +133,35 @@
         <button onclick="showAlert()" class="try-me">try it Free</button>
       </article>
     </header>
-    <section class="community">
-      <h1 class="community-title">Build The Community Your Fans Will Love</h1>
-      <p class="community-p">
-        Huddle re-imagines the way we build communities. You have a voice, but
-        so does your audience. Create connections with your users as you engage
-        in genuine discussion.
-      </p>
-      <button onclick="showAlert()" class="community-button">
-        Get Started For Free
-      </button>
-      <img src="./images/screen-mockups.svg" alt="screen mockups image" />
-    </section>
-    <section class="info-section">
-      <article class="info">
-        <img src="./images/icon-communities.svg" alt="communities image" />
-        <span>1.4k+</span>
-        <span> Communities Formed</span>
-      </article>
-      <article class="info">
-        <img src="./images/icon-messages.svg" alt="message image" />
-        <span>2.7m+</span>
-        <span> Messages Sent</span>
-      </article>
-    </section>
+    <main>
+      <section class="community">
+        <h1 class="community-title">Build The Community Your Fans Will Love</h1>
+        <p class="community-p">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button onclick="showAlert()" class="community-button">
+          Get Started For Free
+        </button>
+        <img src="./images/screen-mockups.svg" alt="screen mockups image" />
+      </section>
+      <section class="info-section">
+        <article class="info">
+          <img
+            class="info-img"
+            src="./images/icon-communities.svg"
+            alt="communities image"
+          />
+          <span class="info-title">1.4k+</span>
+          <span class="info-subtitle">Communities Formed</span>
+        </article>
+        <article class="info">
+          <img src="./images/icon-messages.svg" alt="message image" />
+          <span>2.7m+</span>
+          <span> Messages Sent</span>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
