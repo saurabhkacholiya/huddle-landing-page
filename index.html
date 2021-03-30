@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <script>
       function showAlert() {
         alert("button pressed");
@@ -76,6 +80,7 @@
         margin-top: 24px;
         margin-bottom: 20px;
         line-height: 24px;
+        color: #00252e;
       }
       .community-button {
         box-shadow: 0px 3px rgba(0, 37, 46, 0.2231);
@@ -91,29 +96,35 @@
         margin-bottom: 20px;
       }
       .info {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-          "img header header"
-          "content content content"
-          "footer footer footer";
-        border: 1px solid red;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin: 14px 5px;
       }
 
       .info-title {
-        grid-area: content;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        font-family: "Poppins";
       }
 
       .info-subtitle {
-        grid-area: footer;
+        text-align: center;
+        font-size: 18px;
+        color: #808e9a;
       }
 
       .info-img {
-        grid-area: img;
+        height: 29px;
+        width: 30px;
+        margin-left: 32px;
       }
 
       .info-section {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
         margin: 30px;
         padding: 20px;
       }
@@ -157,9 +168,13 @@
           <span class="info-subtitle">Communities Formed</span>
         </article>
         <article class="info">
-          <img src="./images/icon-messages.svg" alt="message image" />
-          <span>2.7m+</span>
-          <span> Messages Sent</span>
+          <img
+            class="info-img"
+            src="./images/icon-messages.svg"
+            alt="message image"
+          />
+          <span class="info-title">2.7m+</span>
+          <span class="info-subtitle"> Messages Sent</span>
         </article>
       </section>
     </main>
