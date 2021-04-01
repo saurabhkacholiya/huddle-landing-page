@@ -128,6 +128,69 @@
         margin: 30px;
         padding: 20px;
       }
+
+      .grow-together {
+        position: relative;
+        background-color: #f6fbff;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 500px;
+        padding: 20px;
+      }
+
+      .bg-grow-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      .bg-grow-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      .grow-together-img {
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+      }
+      .grow-together-title {
+        margin: 15px 0px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        font-family: "Poppins";
+      }
+
+      .grow-together-p {
+        text-align: center;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        line-height: 24px;
+        color: #00252e;
+        font-size: 14px;
+      }
+
+      .flow-together {
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 500px;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
@@ -177,6 +240,37 @@
           <span class="info-subtitle"> Messages Sent</span>
         </article>
       </section>
+      <article class="grow-together">
+        <img
+          class="bg-grow-top"
+          src="./images/bg-section-bottom-mobile-2.svg"
+        />
+        <img
+          class="grow-together-img"
+          src="./images/illustration-grow-together.svg"
+        />
+        <img
+          class="bg-grow-bottom"
+          src="./images/bg-section-top-desktop-2.svg"
+        />
+        <span class="grow-together-title">Grow Together</span>
+        <p class="grow-together-p">
+          Generate meaningful discussions with your audience and build a strong,
+          loyal community. Think of the insightful conversations you miss out on
+          with a feedback form.
+        </p>
+      </article>
+      <article class="flow-together">
+        <img
+          class="grow-together-img"
+          src="./images/illustration-flowing-conversation.svg"
+        />
+        <span class="grow-together-title">Flowing Conversations</span>
+        <p class="grow-together-p">
+          You wouldn't paginate a conversation in real life, so why do it
+          online? Our threads have just-in-time loading for a more natural flow.
+        </p>
+      </article>
     </main>
   </body>
 </html>
