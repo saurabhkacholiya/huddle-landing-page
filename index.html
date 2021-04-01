@@ -218,6 +218,7 @@
         flex-direction: column;
         background-color: #00252e;
         min-height: 400px;
+        padding: 20px;
       }
 
       .bg-footer-top {
@@ -226,6 +227,73 @@
         left: 0;
         right: 0;
         width: 100%;
+      }
+      .footer-newsletter {
+        margin: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-desc {
+        color: #fff;
+        margin: 10px 0px 10px 0px;
+        font-size: 14px;
+      }
+
+      .footer-title {
+        color: #fff;
+        margin: 10px 0px 10px 0px;
+        font-weight: 700;
+      }
+
+      .footer-input {
+        height: 35px;
+        border-radius: 6px;
+        margin: 10px 0px 10px 0px;
+      }
+
+      .subscribe-btn {
+        box-shadow: 0px 3px rgb(0 37 46 / 22%);
+        width: 200px;
+        height: 40px;
+        border-radius: 6px;
+        background-color: hsl(322, 100%, 66%);
+        color: white;
+        font-size: 12px;
+        font-family: "Poppins";
+        align-self: flex-end;
+        border-width: 0;
+        margin: 10px 0px 10px 0px;
+      }
+      .footer-span-desc {
+        font-size: 14px;
+        line-height: 24px;
+        color: white;
+        display: block;
+        margin: 10px 0px 10px 0px;
+      }
+      .footer-info-img {
+        height: 15px;
+        width: 15px;
+        object-fit: contain;
+      }
+
+      .footer-info-text {
+        color: white;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+      .logo-img {
+        height: 25px;
+        width: 100px;
+        object-fit: contain;
+      }
+      .info-view {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -336,6 +404,30 @@
     </main>
     <footer class="footer-style">
       <img class="bg-footer-top" src="./images/bg-footer-top-desktop.svg" />
+      <article class="footer-newsletter">
+        <span class="footer-title">NEWSLETTER</span>
+        <span class="footer-desc">
+          To recieve tips on how to grow your community, sign up to our weekly
+          newsletter. We’ll never send you spam or pass on your email address
+        </span>
+        <input class="footer-input" />
+        <button class="subscribe-btn">Subscribe</button>
+      </article>
+      <article class="footer-newsletter">
+        <img class="logo-img" src="./images/logo.svg" />
+        <span class="footer-span-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
+          quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+        </span>
+        <article class="info-view">
+          <img src="./images/icon-phone.svg" class="footer-info-img" />
+          <span class="footer-info-text">Phone: +1-543-123-4567</span>
+        </article>
+        <article class="info-view">
+          <img src="./images/icon-email.svg" class="footer-info-img" />
+          <span class="footer-info-text"> example@huddle.com </span>
+        </article>
+      </article>
     </footer>
   </body>
 </html>
