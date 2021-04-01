@@ -191,6 +191,42 @@
         min-height: 500px;
         padding: 20px;
       }
+
+      .build-community {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        min-height: 250px;
+        flex-direction: column;
+        margin-bottom: 32px;
+      }
+
+      .build-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        font-family: "Poppins";
+        margin: 20px 0px 20px 0px;
+      }
+
+      .footer-style {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background-color: #00252e;
+        min-height: 400px;
+      }
+
+      .bg-footer-top {
+        position: absolute;
+        top: -39px;
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -271,6 +307,35 @@
           online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </article>
+      <article class="grow-together">
+        <img
+          class="bg-grow-top"
+          src="./images/bg-section-bottom-mobile-2.svg"
+        />
+        <img
+          class="grow-together-img"
+          src="./images/illustration-your-users.svg"
+        />
+        <img
+          class="bg-grow-bottom"
+          src="./images/bg-section-top-desktop-2.svg"
+        />
+        <span class="grow-together-title">Your Users</span>
+        <p class="grow-together-p">
+          It takes no time at all to integrate Huddle with your app's
+          authentication solution. This means, once signed in to your app, your
+          users can start chatting immediately.
+        </p>
+      </article>
+      <article class="build-community">
+        <span class="build-title"> Ready To Build Your Community? </span>
+        <button onclick="showAlert()" class="community-button">
+          Get Started For Free
+        </button>
+      </article>
     </main>
+    <footer class="footer-style">
+      <img class="bg-footer-top" src="./images/bg-footer-top-desktop.svg" />
+    </footer>
   </body>
 </html>
