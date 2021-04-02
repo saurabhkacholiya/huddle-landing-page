@@ -295,6 +295,95 @@
         align-items: center;
         margin-bottom: 10px;
       }
+
+      .grow-title-wrapper {
+        text-align: center;
+      }
+
+      @media (min-width: 800px) {
+        .try-me {
+          box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+          border: 1px solid hsl(321, 100%, 78%);
+          color: hsl(321, 100%, 78%);
+          background-color: white;
+          height: 30px;
+          width: 100px;
+          border-radius: 20px;
+        }
+
+        .msg-img {
+          height: 20px;
+          width: 20px;
+          margin-top: 1px;
+        }
+
+        .title-header {
+          font-family: "Poppins";
+          font-size: 24px;
+          font-weight: 700;
+          display: block;
+          margin-left: 5px;
+        }
+
+        .community-p {
+          align-self: center;
+          width: 50%;
+        }
+
+        .mock-img {
+          height: 800px;
+          width: 1000px;
+          object-fit: fill;
+          align-self: center;
+        }
+
+        .info-section {
+          flex-direction: row;
+        }
+        .info-img {
+          align-self: center;
+          margin-right: 143px;
+          margin-left: 0px;
+        }
+        .grow-together {
+          flex-direction: row-reverse;
+        }
+
+        .grow-together-p {
+          width: 50%;
+          align-self: center;
+        }
+
+        .grow-title-wrapper {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-right: 47px;
+          flex: 1;
+          justify-content: center;
+        }
+
+        .grow-together-img {
+          flex: 1;
+        }
+
+        .bg-grow-top {
+          height: 50px;
+        }
+        .bg-grow-bottom {
+          height: 50px;
+        }
+
+        .bg-footer-top {
+          top: -167px;
+        }
+
+        .build-community {
+          min-height: 500px;
+          margin-bottom: 166px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -322,7 +411,11 @@
         <button onclick="showAlert()" class="community-button">
           Get Started For Free
         </button>
-        <img src="./images/screen-mockups.svg" alt="screen mockups image" />
+        <img
+          class="mock-img"
+          src="./images/screen-mockups.svg"
+          alt="screen mockups image"
+        />
       </article>
       <section class="info-section">
         <article class="info">
@@ -357,12 +450,14 @@
           class="bg-grow-bottom"
           src="./images/bg-section-top-desktop-2.svg"
         />
-        <span class="grow-together-title">Grow Together</span>
-        <p class="grow-together-p">
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
+        <article class="grow-title-wrapper">
+          <span class="grow-together-title">Grow Together</span>
+          <p class="grow-together-p">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </article>
       </article>
       <article class="flow-together">
         <img
