@@ -248,15 +248,17 @@
       }
 
       .footer-input {
+        width: inherit;
         height: 35px;
         border-radius: 6px;
         margin: 10px 0px 10px 0px;
+        padding: 10px;
       }
 
       .subscribe-btn {
         box-shadow: 0px 3px rgb(0 37 46 / 22%);
         width: 200px;
-        height: 40px;
+        height: 36px;
         border-radius: 6px;
         background-color: hsl(322, 100%, 66%);
         color: white;
@@ -298,6 +300,11 @@
 
       .grow-title-wrapper {
         text-align: center;
+      }
+
+      .sub-btn-wrapper {
+        display: flex;
+        flex-direction: column;
       }
 
       @media (min-width: 800px) {
@@ -349,6 +356,10 @@
           flex-direction: row-reverse;
         }
 
+        .flow-together {
+          flex-direction: row;
+        }
+
         .grow-together-p {
           width: 50%;
           align-self: center;
@@ -382,6 +393,31 @@
         .build-community {
           min-height: 500px;
           margin-bottom: 166px;
+        }
+
+        .footer-style {
+          flex-direction: row-reverse;
+          min-height: 250px;
+        }
+
+        .footer-desc {
+          width: 50%;
+        }
+        .footer-span-desc {
+          width: 50%;
+        }
+
+        .info-view {
+          flex: 0;
+        }
+
+        .sub-btn-wrapper {
+          flex-direction: row;
+        }
+
+        .footer-input {
+          width: 300px;
+          margin-right: 10px;
         }
       }
     </style>
@@ -464,11 +500,14 @@
           class="grow-together-img"
           src="./images/illustration-flowing-conversation.svg"
         />
-        <span class="grow-together-title">Flowing Conversations</span>
-        <p class="grow-together-p">
-          You wouldn't paginate a conversation in real life, so why do it
-          online? Our threads have just-in-time loading for a more natural flow.
-        </p>
+        <article class="grow-title-wrapper">
+          <span class="grow-together-title">Flowing Conversations</span>
+          <p class="grow-together-p">
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </article>
       </article>
       <article class="grow-together">
         <img
@@ -483,12 +522,14 @@
           class="bg-grow-bottom"
           src="./images/bg-section-top-desktop-2.svg"
         />
-        <span class="grow-together-title">Your Users</span>
-        <p class="grow-together-p">
-          It takes no time at all to integrate Huddle with your app's
-          authentication solution. This means, once signed in to your app, your
-          users can start chatting immediately.
-        </p>
+        <article class="grow-title-wrapper">
+          <span class="grow-together-title">Your Users</span>
+          <p class="grow-together-p">
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </article>
       </article>
       <article class="build-community">
         <span class="build-title"> Ready To Build Your Community? </span>
@@ -505,8 +546,14 @@
           To recieve tips on how to grow your community, sign up to our weekly
           newsletter. We’ll never send you spam or pass on your email address
         </span>
-        <input class="footer-input" />
-        <button class="subscribe-btn">Subscribe</button>
+        <article class="sub-btn-wrapper">
+          <input
+            placeholder="Enter your email"
+            alt="Enter your email-id"
+            class="footer-input"
+          />
+          <button class="subscribe-btn">Subscribe</button>
+        </article>
       </article>
       <article class="footer-newsletter">
         <img class="logo-img" src="./images/logo.svg" />
