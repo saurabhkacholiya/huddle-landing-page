@@ -50,7 +50,7 @@ Users should be able to:
 - I am proud of the complete project
 - Its in plain html and css
 - The Design (CSS) is near to perfect of the given design in figma
-- it has boosted my confidence!!
+- I am able to complete the project!!
 
 ```html
 <header>using</header>
