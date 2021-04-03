@@ -48,6 +48,11 @@ Users should be able to:
 
 ### What I learned
 
+- I am proud of the complete project
+  - its in plain html and css
+  - The Design is near to perfect of the given design
+  - it has boosted my confidence!!
+
 ```html
 <header>using</header>
 <main>semantic</main>
