@@ -27,12 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile-view](./mobileView.png)
-![desktop-view](./desktopView.png)
+![mobile-view](./mobileView.png) ![desktop-view](./desktopView.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://saurabhkacholiya.github.io/huddle-landing-page/)
+- Live Site URL: [live site URL](https://saurabhkacholiya.github.io/huddle-landing-page/)
 
 ## My process
 
